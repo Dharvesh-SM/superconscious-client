@@ -1,5 +1,6 @@
 import { Dashboard } from "./pages/Dashboard";
 import { Auth } from "./pages/Auth";
+import { AuthCallback } from "./pages/AuthCallback";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import { Provider } from 'react-redux';
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   { path: "/Signup", element: <Auth /> },
   { path: "/Dashboard", element: <Dashboard /> },
   { path: "/share/:hash", element: <Dashboard /> },
+  { path: "/auth-callback", element: <AuthCallback /> },
 ]);
 
 function App() {
